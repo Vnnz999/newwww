@@ -1,0 +1,106 @@
+nav{
+    background-color: rgb(14, 20, 22);
+}
+/* e termina com 
+ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li{
+    
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+li a:hover{
+    background-color: rgb(0, 140, 255);
+}
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    height: 200vh;
+}
+nav.menulateral{
+    width: 79px;
+    height: 100%;
+    background-color: #111;
+    padding: 40px  0  40px 1%;
+    right: 1%;
+    box-shadow: 3px 0 0 #ff0000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .2s;
+    
+}
+nav.menulateral:hover{
+width: 300px;
+}
+
+.expandir{
+    width: 100%;
+    padding-left: 10px;
+}
+.expandir >i {
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+ul{
+    height: 100%;
+    list-style-type: none;
+
+}
+ul li.menu{
+    transition: .2s;
+}
+ul li.menu:HOVER{
+    background-color: rgb(34, 126, 212);
+
+}
+
+ul li.menu a{
+    
+    line-height: 40px;
+    color: white;
+    font-size: 20px;
+    padding: 40px 2%;
+    display: flex;
+    text-decoration: none;
+    margin-bottom: 20px;
+
+}
+ul li.menu a .icon > i{
+    font-size: 30px;
+    padding-left: 15px;
+
+}
+ul li.menu a .txt-link{
+    margin-left: 30px;
+    
+}
+
+.download {
+    padding-top: 100%;
+}
+
+nav.rp{
+    background-color: transparent;
+    
+}
+
+.subcamisa{
+    text-decoration: none;
+    list-style-type: none;
+    padding-left: 200px;
+    left: 300px;
+    width: 5000px;
+    font-size: 40px;
+}

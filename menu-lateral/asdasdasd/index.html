@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>aula</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body {
+            height: 200vh;
+        }
+        nav.menulateral {
+            width: 79px;
+            height: 100%;
+            background-color: #111;
+            padding: 40px 0 40px 1%;
+            right: 1%;
+            box-shadow: 3px 0 0 #ff0000;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            transition: .2s;
+        }
+        nav.menulateral:hover {
+            width: 300px;
+        }
+        .expandir {
+            width: 100%;
+            padding-left: 10px;
+        }
+        .expandir > i {
+            color: white;
+            font-size: 35px;
+            cursor: pointer;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        li {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            position: relative;
+        }
+        li a:hover {
+            background-color: rgb(0, 140, 255);
+        }
+        .menu .txt {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            visibility: hidden;
+            display: block;
+            opacity: 0;
+            transition: opacity 0.5s, top 0.5s;
+        }
+        .menu:hover .txt {
+            visibility: visible;
+            opacity: 1;
+            top: 100%;
+        }
+        .txt1:hover + .txt {
+            visibility: visible;
+            opacity: 1;
+            top: 100%;
+        }
+        .menu .txt1:hover + .txt {
+            visibility: visible;
+            opacity: 1;
+            top: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="menulateral">
+        <div class="expandir">
+            <i class="bi bi-list"></i>
+        </div>
+        <ul>
+            <li class="menu">
+                <a href="file:///C:/Users/player/Desktop/Menu%20html%20e%20css/menu-lateral/index.html#">
+                    <span class="icon"><i class="bi bi-house-door"></i></span>
+                    <span class="txt-link">Home</span>
+                </a>
+            </li>
+            <li class="menu">
+                <a href="file:///C:/Users/player/Desktop/Menu%20html%20e%20css/menu-lateral/Sobre/index.html#">
+                    <span class="icon"><i class="bi bi-info-square"></i></span>
+                    <span class="txt-link">Sobre</span>
+                </a>
+            </li>
+            <li class="menu">
+                <a href="file:///C:/Users/player/Desktop/Menu%20html%20e%20css/menu-lateral/Roupas/index.html">
+                    <span class="icon"><i class="bi bi-collection"></i></span>
+                    <div class="txt1">
+                        <span class="txt-link">Roupas</span>
+                    </div>
+                    <div class="txt">
+                        <span class="txt-linkcamisa"><br>Camisas</span>
+                    </div>
+                </a>
+            </li>
+            <li class="menu">
+                <a href="https://wa.me/5562993439444">
+                    <span class="icon"><i class="bi bi-whatsapp"></i></span>
+                    <span class="txt-link">Whatsapp</span>
+                </a>
+            </li>
+            <li class="menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-download"></i></span>
+                    <span class="txt-link"></span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
